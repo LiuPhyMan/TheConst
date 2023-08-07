@@ -15,6 +15,7 @@ K2eV = 1/eV2K
 relM2absM = atomic_mass
 absM2relM = 1 / relM2absM
 e2 = 2.30708e-28 # unit: J m
+bohr_radius = physical_constants["Bohr radius"][0]
 
 def nm2Hz(wavelength):
     return 1e9 * c / wavelength
