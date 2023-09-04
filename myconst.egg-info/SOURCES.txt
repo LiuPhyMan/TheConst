@@ -1,3 +1,5 @@
+LICENSE
+README.md
 setup.py
 myconst/__init__.py
 myconst.egg-info/PKG-INFO
