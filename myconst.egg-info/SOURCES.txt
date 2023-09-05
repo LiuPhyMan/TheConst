@@ -1,9 +1,0 @@
-LICENSE
-README.md
-setup.py
-myconst/__init__.py
-myconst.egg-info/PKG-INFO
-myconst.egg-info/SOURCES.txt
-myconst.egg-info/dependency_links.txt
-myconst.egg-info/requires.txt
-myconst.egg-info/top_level.txt
