@@ -24,6 +24,8 @@ e2 = 2.30708e-28 # unit: J m
 bohr_radius = physical_constants["Bohr radius"][0]
 light_c = c
 Ry_J = physical_constants["Rydberg constant times hc in J"][0]
+Ry_eV = physical_constants["Rydberg constant times hc in eV"][0]
+kB = k
 
 nm2m = 1e-9
 m2nm = 1 / nm2m
@@ -34,6 +36,8 @@ m2mm = 1 / mm2m
 mm2nm = 1e6
 nm2mm = 1 / mm2nm
 
+atm2Pa = 101325.0
+Pa2atm = 1/atm2Pa
 
 def nm2Hz_f(wvl_nm):
     return c / (wvl_nm * nm2m)
