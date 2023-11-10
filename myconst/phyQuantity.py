@@ -11,10 +11,10 @@ def Length(value, unit):
         case "m":
             return value
         case "cm":
-            return value * 1e-2
+            return value*1e-2
         case "mm":
-            return value * 1e-3
+            return value*1e-3
         case "nm":
-            return value * 1e-9
+            return value*1e-9
         case _:
             raise Exception("unit of {unit} is error.")
