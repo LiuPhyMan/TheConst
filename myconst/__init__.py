@@ -23,6 +23,7 @@ K2eV = 1/eV2K
 relM2absM = atomic_mass
 absM2relM = 1/relM2absM
 e2 = 2.30708e-28  # unit: J m
+e2_eV = e2 * J2eV
 bohr_radius = physical_constants["Bohr radius"][0]
 light_c = c
 Ry_J = physical_constants["Rydberg constant times hc in J"][0]
@@ -54,3 +55,16 @@ def nm2Hz_f(wvl_nm):
 
 def Hz2nm_f(nu):
     return (c/nu)*m2nm
+
+def nm2eV_f(wvl_nm):
+    return nm2Hz_f(wvl_nm) * Hz2eV
+
+def eV2nm_f(_eV):
+    return Hz2nm_f(_eV * eV2Hz)
+
+def m2Hz_f(wvl_m):
+    return nm2Hz_f(wvl_m*m2nm)
+
+
+def Hz2m_f(nu):
+    return Hz2nm_f(nu)*nm2m
