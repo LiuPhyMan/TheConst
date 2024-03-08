@@ -50,7 +50,7 @@ allSR = 4*_pi
 
 
 def nm2Hz_f(wvl_nm):
-  return c/(wvl_nm*nm2m)
+  return light_c/(wvl_nm*nm2m)
 
 
 def nm2J_f(wvl_nm):
@@ -58,7 +58,7 @@ def nm2J_f(wvl_nm):
 
 
 def Hz2nm_f(nu):
-  return (c/nu)*m2nm
+  return (light_c/nu)*m2nm
 
 
 def nm2eV_f(wvl_nm):
